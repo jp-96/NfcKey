@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>NfcKey</title>
+<script type="text/javascript" src="NfcKeyJS.js"></script>
+</head>
+<body>
+
+<SCRIPT language="JavaScript">
+
+function calc(){
+    var nfckey = new NfcKey()
+    document.fm.RSLT.value = nfckey.getKey(document.fm.P0.value.substr(0,6) + document.fm.P1.value);
+}
+
+</SCRIPT>
+
+<FORM name="fm">
+Page00:<INPUT size="8" type="text" name="P0"><br>
+Page01:<INPUT size="8" type="text" name="P1"><br>
+<INPUT type="button" value="calc" onclick="calc()"><br>
+<INPUT size="20" type="text" name="RSLT">
+</FORM>
+
+<p>
+
+<a href="http://www.soliforum.com/topic/15815/xyz-printing-da-vinci-jr-w-da-vinci-mini-w-hacking/">http://www.soliforum.com/topic/15815/xyz-printing-da-vinci-jr-w-da-vinci-mini-w-hacking/</a>
+</body>
+</html>
